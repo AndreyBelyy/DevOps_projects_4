@@ -23,10 +23,14 @@ pipeline {
                 }
             }
         }
-        stage('Terraform Apply') {
-            steps {
-                script {
-                    sh 'terraform apply -auto-approve tfplan'
+        stage('Terraform Apply'){
+            steps{
+                withCredentials([[
+                    $class: 'AmazonWebServicesCredentialsBinding',
+                    credentialsId: "dev_ops",
+                    accessKeyVariable: 'AWS_ACCESS_KEY_ID',
+                    secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+                sh 'terraform apply --auto-approve tfplan'
                 }
             }
         }
