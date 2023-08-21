@@ -10,7 +10,7 @@ resource "aws_instance" "arfa" {
     }
 }
 
-terrafrom {
+terraform {
     backend "s3" {
         bucket = "devopsprojectaw"
         key    = "terraform.tfstate"
