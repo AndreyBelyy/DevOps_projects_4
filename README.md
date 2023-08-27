@@ -17,9 +17,10 @@ Set up your Terraform Code Repository Create a Git repository with your Terrafor
 Write the Jenkinsfile In your Terraform code repository, create a Jenkinsfile (Jenkinsfile)
  - Step 6:
 Configure Jenkins Job
-  a) In Jenkins, create a new pipeline job
-  b) Under the “Pipeline” section, select “Pipeline script from SCM.”
-  c) Provide the repository URL and specify the Jenkinsfile location (e.g., Jenkinsfile)
-  d) Save the job configuration
+      a) In Jenkins, create a new pipeline job
+      b) Under the “Pipeline” section, select “Pipeline script from SCM.”
+      c) Provide the repository URL and specify the Jenkinsfile location (e.g., Jenkinsfile)
+      d) Save the job configuration
  - Step 7:
 Run the Jenkins Job Now, you can run the pipeline job to execute your Terraform code and provision an EC2 instance. Jenkins will fetch the code from the repository, initialize Terraform, create a plan, apply the changes, and upload the Terraform state to an S3 bucket.
+Credits to Praveen Dandu (https://www.linkedin.com/in/pravin24/)
