@@ -23,4 +23,4 @@ Configure Jenkins Job
       d) Save the job configuration
  - Step 7:
 Run the Jenkins Job Now, you can run the pipeline job to execute your Terraform code and provision an EC2 instance. Jenkins will fetch the code from the repository, initialize Terraform, create a plan, apply the changes, and upload the Terraform state to an S3 bucket.
-Credits to Praveen Dandu (https://www.linkedin.com/in/pravin24/)
+ - Credits to Praveen Dandu (https://www.linkedin.com/in/pravin24/)
