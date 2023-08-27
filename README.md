@@ -1,8 +1,8 @@
 # DevOps_projects_4
 Jenkins pipeline to run a Terraform script
-Step 1:
+- Step 1:
 Write the Terraform Code Create a new directory for your Terraform project. Inside the directory, create a main.tf file with the following Terraform code. (main.tf)
-Step 2:
+ - Step 2:
 Install Required Plugins Ensure you have Jenkins installed, and then install the following plugins through the Jenkins Plugin Manager:
 - AWS CLI Plugin
 - Terraform Plugin
